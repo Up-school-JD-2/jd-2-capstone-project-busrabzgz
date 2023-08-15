@@ -1,0 +1,1390 @@
+{
+	"info": {
+		"_postman_id": "4aebc3e8-97f2-4826-9f4d-2d3abf836d78",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25630915",
+		"_collection_link": "https://lunar-rocket-357161.postman.co/workspace/New-Team-Workspace~62eae275-6d9e-4d45-ae2f-9c22c0e5a4b2/collection/14960512-0fd00cdc-8fe2-4d49-b573-8152681c50c5?action=share&creator=14960512&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "airCraft",
+			"item": [
+				{
+					"name": "findAllAirCrafts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/aircraft",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"airCraft"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "findAllAirCrafts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/aircraft",
+									
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"airCraft"
+									]
+								}
+							},
+							{
+								"status": "OK",
+								"code": 200,
+								"_postman_previewlanguage": "json",
+								"header": [
+									{
+										"key": "HEADER",
+										"value": "Header value"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Transfer-Encoding",
+										"value": "chunked"
+									},
+									{
+										"key": "Date",
+										"value": "Wed, 02 Aug 2023 08:20:00 GMT"
+									},
+									{
+										"key": "Keep-Alive",
+										"value": "timeout=60"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									}
+								],
+								"cookie": [],
+								"body": [
+									{
+										"id": "1",
+										"number": "ABC123",
+										"capacity": 150,
+										"manufacturer": "Boeing",
+										"manufactureDate": "2020-05-15",
+										"flightScheduleId": "FLIGHT123"
+									},
+									{
+										"id": "2",
+										"number": "XYZ456",
+										"capacity": 200,
+										"manufacturer": "Airbus",
+										"manufactureDate": "2019-11-20",
+										"flightScheduleId": "FLIGHT456"
+									},
+									{
+										"id": "3",
+										"number": "DEF789",
+										"capacity": 180,
+										"manufacturer": "Embraer",
+										"manufactureDate": "2022-02-10",
+										"flightScheduleId": "FLIGHT789"
+									},
+									{
+										"id": "4",
+										"number": "GHI234",
+										"capacity": 160,
+										"manufacturer": "Bombardier",
+										"manufactureDate": "2021-08-05",
+										"flightScheduleId": "FLIGHT234"
+									},
+									{
+										"id": "5",
+										"number": "JKL567",
+										"capacity": 170,
+										"manufacturer": "Cessna",
+										"manufactureDate": "2018-06-25",
+										"flightScheduleId": "FLIGHT567"
+									},
+									{
+										"id": "6",
+										"number": "MNO890",
+										"capacity": 190,
+										"manufacturer": "Embraer",
+										"manufactureDate": "2017-09-30",
+										"flightScheduleId": "FLIGHT890"
+									},
+									{
+										"id": "7",
+										"number": "PQR123",
+										"capacity": 175,
+										"manufacturer": "Airbus",
+										"manufactureDate": "2023-01-12",
+										"flightScheduleId": "FLIGHT123"
+									}
+								]
+							}
+
+					]
+				},
+				{
+					"name": "aircraft",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{host}}/api/v1/aircraft",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/aircraft",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"airCraft"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{{host}}/api/v1/aircraft",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/airlines",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"airCraft"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Aug 2023 08:20:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": {
+								"status": "OK",
+								"message": "Aircraft created successfully.",
+								"data": {
+									"id": 12345,
+									"number": "ABC123",
+									"capacity": 150,
+									"manufacturer": "Boeing",
+									"manufactureDate": "2022-03-15",
+									"flightScheduleId": "FLIGHT123"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/aircraft/id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"airlines",
+								"id"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/aircraft/id",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"airlines",
+										"id"
+									]
+								}
+							},
+							{
+								"status": "OK",
+								"code": 200,
+								"_postman_previewlanguage": "json",
+								"header": [
+									{
+										"key": "HEADER",
+										"value": "Header value"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Transfer-Encoding",
+										"value": "chunked"
+									},
+									{
+										"key": "Date",
+										"value": "Wed, 02 Aug 2023 08:20:00 GMT"
+									},
+									{
+										"key": "Keep-Alive",
+										"value": "timeout=60"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive"
+									}
+								],
+								"cookie": [],
+								"body": {
+									"status": "OK",
+									"message": "Aircraft deleted successfully.",
+									"deletedAircraftId": "12345"
+								}
+							}
+
+						}
+					]
+				},
+
+		{
+			"name": "AirFareController",
+			"item": [
+				{
+
+
+					"name": "findAllAirFares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/airfare/id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"airfare",
+								"id"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/airfare/id",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"airfare",
+										"id"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 05 Aug 2023 18:45:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": {
+								"id": "12345",
+								"fare": 250.0,
+								"routeId": "ROUTE123"
+							}
+						}
+					]
+				},
+				{
+					"name": "findAllAirFares",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "findAllAirFares",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/airfare",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"airfare"
+									]
+
+								}
+							},
+    "status": "OK",
+    "code": 200,
+    "_postman_previewlanguage": "json",
+    "header": [
+        {
+            "key": "HEADER",
+            "value": "Header value"
+        },
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "key": "Transfer-Encoding",
+            "value": "chunked"
+        },
+		{
+			"key": "Date",
+			"value": "Sat, 05 Aug 2023 18:45:32 GMT"
+		},
+        {
+            "key": "Keep-Alive",
+            "value": "timeout=60"
+        },
+        {
+            "key": "Connection",
+            "value": "keep-alive"
+        }
+    ],
+    "cookie": [],
+    "body": [
+        {
+            "id": "1",
+            "fare": 200.0,
+            "routeId": "ROUTE123"
+        },
+        {
+            "id": "2",
+            "fare": 150.0,
+            "routeId": "ROUTE456"
+        },
+        {
+            "id": "3",
+            "fare": 180.0,
+            "routeId": "ROUTE789"
+        },
+        {
+            "id": "4",
+            "fare": 220.0,
+            "routeId": "ROUTE234"
+        }
+    ]
+						}
+					]
+				}
+			]
+		},
+				{
+					"name": "ContactDetail",
+					"item": [
+						{
+							"name": "contactDetail",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{{host}}/api/v1/contact-detail",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/v1/contact-detail",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"contact-detail"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{{host}}/api/v1/contact-detail",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/v1/contact-detail",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"contact-detail"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "HEADER",
+											"value": "Header value"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Aug 2023 18:45:32 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": {
+										"status": "OK",
+										"message": "Contact detail created successfully."
+									}
+								}
+							]
+						},
+						{
+							"name": "contactDetail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/contact-detail",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"contact-detail"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "airports",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/v1/contact-detail",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"contact-detail"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "HEADER",
+											"value": "Header value"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Aug 2023 18:45:32 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": [
+										{
+											"id": "1",
+											"email": "example@example.com",
+											"phone": "123-456-7890",
+											"street": "123 Main St",
+											"stateId": "STATE123",
+											"passengerId": "PASSENGER123"
+										},
+										{
+											"id": "2",
+											"email": "test@test.com",
+											"phone": "987-654-3210",
+											"street": "456 Elm St",
+											"stateId": "STATE456",
+											"passengerId": "PASSENGER456"
+										},
+										{
+											"id": "3",
+											"email": "user@user.com",
+											"phone": "555-123-4567",
+											"street": "789 Oak St",
+											"stateId": "STATE789",
+											"passengerId": "PASSENGER789"
+										}
+									]
+								}
+							]
+						},
+
+						{
+							"name": "Country",
+							"item": [
+								{
+									"name": "country",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{{host}}//api/v1/country",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}//api/v1/country",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"country"
+
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "country",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{{host}}//api/v1/country",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{host}}//api/v1/country",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"country"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "HEADER",
+													"value": "Header value"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 05 Aug 2023 18:55:32 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": {
+												"id": "1",
+												"name": "United States"
+											}
+										},
+										{
+											"name": "country",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{{host}}//api/v1/country",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{host}}//api/v1/country",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"country"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "HEADER",
+													"value": "Header value"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 10 Aug 2023 14:30:15 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": {
+												"status": "OK",
+												"message": "Country created successfully."
+											}
+										}
+									]
+								},
+
+		{
+			"name": "FlightSchedule",
+			"item": [
+				{
+					"name": "flightSchedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{host}}//api/v1/flight-schedule",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}//api/v1/flight-schedule",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"flight-schedule"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "flightSchedule",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{{host}}//api/v1/flight-schedule",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}//api/v1/flight-schedule",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"flight-schedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Aug 2023 14:40:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": [
+								{
+									"id": "1",
+									"flightDate": "2023-08-15",
+									"departure": "2023-08-15",
+									"arrival": "2023-08-16",
+									"airCrafts": [
+										{
+											"id": "1",
+											"number": "ABC123",
+											"capacity": 150,
+											"manufacturer": "Boeing",
+											"manufactureDate": "2022-03-15",
+											"flightScheduleId": "FLIGHT123"
+										},
+										{
+											"id": "2",
+											"number": "XYZ456",
+											"capacity": 200,
+											"manufacturer": "Airbus",
+											"manufactureDate": "2019-11-20",
+											"flightScheduleId": "FLIGHT123"
+										}
+									]
+								},
+								{
+									"id": "2",
+									"flightDate": "2023-08-16",
+									"departure": "2023-08-16",
+									"arrival": "2023-08-17",
+									"airCrafts": [
+										{
+											"id": "3",
+											"number": "DEF789",
+											"capacity": 180,
+											"manufacturer": "Embraer",
+											"manufactureDate": "2022-02-10",
+											"flightScheduleId": "FLIGHT234"
+										},
+										{
+											"id": "4",
+											"number": "GHI234",
+											"capacity": 160,
+											"manufacturer": "Bombardier",
+											"manufactureDate": "2021-08-05",
+											"flightScheduleId": "FLIGHT234"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Passenger",
+			"item": [
+				{
+					"name": "passenger",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{{host}}/api/v1/passenger",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/passenger",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"passenger"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "passenger",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{{host}}/api/v1/passenger",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/v1/passenger",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"passenger"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Aug 2023 14:50:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": {
+								"status": "OK",
+								"message": "Passenger created successfully."
+							}
+						}
+					]
+				},
+				{
+					"name": "passenger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/v1/passenger",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"passenger"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/v1/passenger",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"passenger"
+									]
+								}
+							},
+							"status": "OK",
+						
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "HEADER",
+									"value": "Header value"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Aug 2023 14:54:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": [
+								{
+									"id": "1",
+									"firstName": "John",
+									"lastName": "Doe",
+									"address": "123 Main St",
+									"age": 30,
+									"nationality": "USA",
+									"contactDetails": [
+										{
+											"id": "1",
+											"email": "john@example.com",
+											"phone": "123-456-7890",
+											"street": "123 Main St",
+											"stateId": "STATE123"
+										}
+									],
+									"transactions": [
+										{
+											"id": "1",
+											"amount": 250.0,
+											"date": "2023-08-15"
+										}
+									]
+								},
+								{
+									"id": "2",
+									"firstName": "Jane",
+									"lastName": "Smith",
+									"address": "456 Elm St",
+									"age": 25,
+									"nationality": "Canada",
+									"contactDetails": [
+										{
+											"id": "2",
+											"email": "jane@example.com",
+											"phone": "987-654-3210",
+											"street": "456 Elm St",
+											"stateId": "STATE456"
+										}
+									],
+									"transactions": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+								{
+									"name": "Payment",
+									"item": [
+										{
+											"name": "payment",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{{host}}/api/v1/payment",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{host}}/api/v1/payment",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"payment"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "New Request",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"body": {
+															"mode": "raw",
+															"raw": "{{host}}/api/v1/payment",
+															"options": {
+																"raw": {
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{host}}/api/v1/payment",
+															"host": [
+																"{{host}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"payment"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "HEADER",
+															"value": "Header value"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Thu, 10 Aug 2023 14:56:15 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": {
+														"message": "Payment successful!"
+													}
+												}
+											]
+										},
+
+										{
+											"name": "Route",
+											"item": [
+												{
+
+												
+													"name": "New Request",
+													"request": {
+														"method": "GET",
+														"header": []
+													},
+													"response": []
+												},
+												{
+													"name": "getAllFlights",
+													"request": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{host}}/api/v1/route",
+															"host": [
+																"{{host}}"
+															],
+															"path": [
+																"api",
+																"flights"
+															]
+														}
+													},
+													"response": [
+														{
+															"name": "New Request",
+															"originalRequest": {
+																"method": "GET",
+																"header": [],
+																"url": {
+																	"raw": "{{host}}/api/v1/route",
+																	"host": [
+																		"{{host}}"
+																	],
+																	"path": [
+																		"api",
+																		"v1",
+																		"route"
+																	]
+																}
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "HEADER",
+																	"value": "Header value"
+																},
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																},
+																{
+																	"key": "Transfer-Encoding",
+																	"value": "chunked"
+																},
+																{
+																	"key": "Date",
+																	"value": "Thu, 10 Aug 2023 14:57:15 GMT"
+																},
+																{
+																	"key": "Keep-Alive",
+																	"value": "timeout=60"
+																},
+																{
+																	"key": "Connection",
+																	"value": "keep-alive"
+																}
+															],
+															"cookie": [],
+															"body": [
+																{
+																	"id": "1",
+																	"airport": "JFK",
+																	"destination": "LHR",
+																	"routeCode": "JFK-LHR",
+																	"airFares": [
+																		{
+																			"id": "1",
+																			"fare": 350.0,
+																			"routeId": "ROUTE123"
+																		},
+																		{
+																			"id": "2",
+																			"fare": 400.0,
+																			"routeId": "ROUTE123"
+																		}
+																	]
+																},
+																{
+																	"id": "2",
+																	"airport": "CDG",
+																	"destination": "FRA",
+																	"routeCode": "CDG-FRA",
+																	"airFares": [
+																		{
+																			"id": "3",
+																			"fare": 300.0,
+																			"routeId": "ROUTE456"
+																		},
+																		{
+																			"id": "4",
+																			"fare": 320.0,
+																			"routeId": "ROUTE456"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+
+
+			]
+		}
+	]
+}
